@@ -1,6 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #72c4da, #7ca581);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+ h1 {
+  margin: 10px 0;
+  font-size: 64px;
+}
+
+
+/* Main content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+/* Calculator */
+.container {
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  width: 280px;
+}
+
+.display {
+  height: 60px;
+  background: #333;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 60px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50%;
+  background: #505050;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.gray {
+  background: #a5a5a5;
+  color: black;
+}
+
+.btn.orange {
+  background: orange;
 }
 
